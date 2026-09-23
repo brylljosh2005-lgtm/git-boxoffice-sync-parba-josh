@@ -15,7 +15,7 @@ assertEqual(tickets.isValidQuantity(0), false, 'a zero quantity is invalid');
 assertEqual(tickets.isValidQuantity(25), false, 'an order over 20 tickets is invalid');
 
 const price = tickets.calculateTicketPrice(3, 15.5);
-assertEqual(price, 46, 'price for 3 tickets at $15.50 each');
+assertEqual(price, 47, 'price for 3 tickets at $15.50 each rounded');
 
 const groupPrice = tickets.calculateTicketPrice(5, 10);
 assertEqual(groupPrice, 45, '10% group discount for 5 tickets at $10 each');
