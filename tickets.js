@@ -15,6 +15,9 @@ function calculateTicketPrice(quantity, pricePerTicket, isVIP = false) {
     total = total * 1.5;
   }
 
+  // Apply flat $10 discount
+  total = total - 10;
+
   return Math.round(total);
 }
 
